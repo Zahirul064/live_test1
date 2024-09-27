@@ -3,9 +3,16 @@ class Car {
   String model;
   int year;
 
-  Car(this.brand, this.model, this.year);
+  Car(
+      this.brand,
+      this.model,
+      this.year
+      );
 
   int carAge() {
+
+    //return DateTime.now().year - year;
+
     DateTime currentDate = DateTime.now();
     int currentYear = currentDate.year;
     int age = currentYear - year;
